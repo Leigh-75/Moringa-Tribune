@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 ```
-8. Creating a basic View. Inside ````news/views.py```` 
+8. Creating a basic View. Inside ````news/views.py```` Check out the *[docs](https://docs.djangoproject.com/en/3.0/intro/tutorial01/#write-your-first-view)* 
 ```
 from django.http  import HttpResponse
 
@@ -59,7 +59,7 @@ urlpatterns = [
     path('', views.welcome, name='welcome'),
 ]
 ```
-10. Register these inside the main app Tribune inside ````tribune/urls.py````.
+10. Register these inside the main app Tribune inside ````tribune/urls.py````. Add include. The include() function allows referencing other URLconfs
 ```
 from django.contrib import admin
 from django.urls import include, path
@@ -75,3 +75,4 @@ urlpatterns = [
 python manage.py runserver
 ```
 Then go to port```127.0.0.1:8000/news```
+12. Ensure to Check out *[Django's documentation](https://docs.djangoproject.com/en/3.0/intro/tutorial01/)*.
