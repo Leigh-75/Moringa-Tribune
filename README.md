@@ -4,7 +4,7 @@ Walkthrough
    ```
    mkdir Jango-Project cd Jango-Project
    ```
-2. Create your virtual environment
+2. Inside that folder, create your virtual environment
 ```
 python3.6 -m venv nameofvirtual
 ```
