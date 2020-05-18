@@ -59,7 +59,7 @@ urlpatterns = [
     path('', views.welcome, name='welcome'),
 ]
 ```
-10. Register these inside the main app Tribune inside ````tribune/urls.py````. Add include. The include() function allows referencing other URLconfs
+10. The next step is to point the root URLconf at the news.urls module. ````tribune/urls.py````. Add include. The include() function allows referencing other URLconfs.
 ```
 from django.contrib import admin
 from django.urls import include, path
